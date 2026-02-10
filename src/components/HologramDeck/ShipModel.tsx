@@ -166,7 +166,7 @@ export function ShipModel({
   const { telemetry } = useShipStore();
   const { warpStatus } = useNavStore();
   // @ts-ignore
-  const { nodes, materials } = useGLTF("/spaceship.glb");
+  const { nodes, materials } = useGLTF("/stellar-sojourner/spaceship.glb");
 
   const shieldColor = new THREE.Color().lerpColors(
     new THREE.Color("#ff003c"),
@@ -278,4 +278,4 @@ export function ShipModel({
   );
 }
 
-useGLTF.preload("/spaceship.glb");
+useGLTF.preload("/stellar-sojourner/spaceship.glb");
